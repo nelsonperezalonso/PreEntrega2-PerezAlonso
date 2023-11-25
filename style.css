@@ -1,0 +1,80 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background-color: #00ff00;
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas en pantallas pequeñas */
+}
+
+header > nav {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+header > nav > a {
+    color: #fef6cd;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-size: x-large;
+    margin: 5px; /* Añadimos un pequeño margen entre los elementos para mayor claridad */
+}
+
+header > nav > a:hover {
+    color: black;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+/* Aplicamos estilos al main */
+main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+/* Aplicamos estilos de ancho a las card */
+main > .card {
+    width: 300px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    margin-top: 20px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+main > .card:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Aplicamos estilos a las imágenes dentro de las card */
+main > .card > img {
+    width: 100%;
+    height: auto;
+    border-radius: 3px;
+}
+
+/* Media query para ajustar estilos en pantallas más pequeñas */
+@media screen and (max-width: 600px) {
+    header {
+        flex-direction: column; /* Cambiamos a dirección de columna en pantallas pequeñas */
+        align-items: center; /* Centramos horizontalmente en pantallas pequeñas */
+    }
+}
+
