@@ -11,20 +11,22 @@ body {
 }
 
 header {
-    background-color: #00ff00;
+    background-color: blue;
     width: 100%;
     padding: 10px;
     box-sizing: border-box;
     display: flex;
     justify-content: space-between;
-    align-items: center;
     flex-wrap: wrap; /* Permite que los elementos se envuelvan en varias líneas en pantallas pequeñas */
 }
 
 header > nav {
+    font-size: x-large;
+    color: white;
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
+    
 }
 
 header > nav > a {
@@ -39,6 +41,7 @@ header > nav > a:hover {
     color: black;
     font-weight: bold;
     text-decoration: underline;
+    ;
 }
 
 /* Aplicamos estilos al main */
@@ -65,7 +68,7 @@ main > .card:hover {
 
 /* Aplicamos estilos a las imágenes dentro de las card */
 main > .card > img {
-    width: 100%;
+    width: 300px;
     height: auto;
     border-radius: 3px;
 }
